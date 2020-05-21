@@ -1,5 +1,5 @@
 variable "count" {
-default=1
+default=2
 }
 
 variable "aws-region" {
@@ -44,7 +44,7 @@ variable "private_subnet-d-cidr" {
 }
 variable "key_name" {
     type = "string"
-    default = "myAwsnew"
+    default = "provisioning"
 }
 variable "AMIS" {
   type = "map"
