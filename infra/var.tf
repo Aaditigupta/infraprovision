@@ -1,5 +1,10 @@
 variable "count" {
-default=2
+    default=2
+}
+
+variable "key_name" {
+    type = "string"
+    default = "infrapvt"
 }
 
 variable "aws-region" {
@@ -17,12 +22,10 @@ variable "public_subnet-a-cidr" {
     default = "192.168.0.0/28"
 }
 
-
 variable "public_subnet-b-cidr" {
     type = "string"
     default = "192.168.0.16/28"
 }
-
 
 variable "private_subnet-a-cidr" {
     type = "string"
@@ -42,10 +45,7 @@ variable "private_subnet-d-cidr" {
     type = "string"
     default = "192.168.0.80/28"
 }
-variable "key_name" {
-    type = "string"
-    default = "provisioning"
-}
+
 variable "AMIS" {
   type = "map"
   default = {
