@@ -9,7 +9,7 @@ variable "key_name" {
 
 variable "aws-region" {
     type = "string"
-    default = "us-east-1"
+    default = "us-west-1"
 }
 
 variable "myVPC-cidr" {
