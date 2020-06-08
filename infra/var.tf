@@ -4,7 +4,7 @@ variable "count" {
 
 variable "key_name" {
     type = "string"
-    default = "infraprivate1"
+    default = "provisionpvt"
 }
 
 variable "aws-region" {
